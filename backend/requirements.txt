@@ -1,0 +1,58 @@
+# FastAPI Backend Requirements
+# Pinned to exact versions to prevent future breakage.
+
+# =============================================================================
+# FastAPI
+# =============================================================================
+fastapi==0.135.1
+uvicorn[standard]==0.41.0
+pydantic==2.12.5
+pydantic-settings==2.13.1
+
+# =============================================================================
+# AgentCore SDK (replaces in-memory agents)
+# =============================================================================
+bedrock-agentcore==1.4.3
+
+# =============================================================================
+# AWS SDK
+# =============================================================================
+boto3==1.42.63
+
+# =============================================================================
+# Authentication (existing)
+# =============================================================================
+PyJWT[crypto]==2.12.0
+python-multipart==0.0.22
+
+# =============================================================================
+# Utils
+# =============================================================================
+requests==2.33.0
+python-dotenv==1.2.2
+httpx==0.28.1
+
+# =============================================================================
+# Agent Dependencies - REMOVED (agents run in AgentCore Runtime)
+# =============================================================================
+# The following dependencies are NO LONGER needed in backend:
+# - strands-agents (runs in Runtime container, not backend)
+# - strands-agents-tools (runs in Runtime container)
+# - strands-agents-builder (runs in Runtime container)
+# - mcp (runs in Runtime container)
+#
+# Backend now invokes agents via boto3.invoke_agent_runtime()
+# See: agents/runtime/requirements.txt for Runtime container deps
+
+# Keep parsedatetime for date parsing utilities in backend
+parsedatetime==2.6
+
+# =============================================================================
+# CORS
+# =============================================================================
+fastapi-cors==0.0.6
+
+# =============================================================================
+# Lambda deployment (optional)
+# =============================================================================
+mangum==0.21.0

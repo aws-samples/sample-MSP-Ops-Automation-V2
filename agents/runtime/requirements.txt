@@ -1,0 +1,42 @@
+# AgentCore Runtime Dependencies
+# ==============================
+# These dependencies run IN the AgentCore Runtime container
+# NOT in the backend container (which is now much lighter)
+# Pinned to exact versions to prevent future breakage.
+
+# AgentCore Runtime SDK (required)
+bedrock-agentcore==1.4.3
+bedrock-agentcore-starter-toolkit==0.3.2
+
+# Agent Framework - runs in Runtime
+strands-agents==1.29.0
+strands-agents-tools==0.2.22
+
+# AWS SDK for customer account access
+boto3==1.42.63
+botocore==1.42.63
+
+# Observability (Auto-instrumentation for AgentCore)
+aws-opentelemetry-distro==0.15.0
+
+# Core dependencies from supervisor_agent.py
+pydantic==2.12.5
+python-dateutil==2.9.0.post0
+parsedatetime==2.6
+
+# HTTP client for MCP servers
+httpx==0.28.1
+aiohttp==3.13.3
+
+# HTTP server for supervisor runtime
+fastapi==0.135.1
+uvicorn==0.41.0
+
+# JSON handling
+orjson==3.11.7
+
+# A2A Protocol Support (NEW - for specialist agent coordination)
+a2a-sdk==0.3.24
+
+# OAuth and Authentication
+requests==2.32.5
