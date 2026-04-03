@@ -26,7 +26,7 @@ parsedatetime==2.6
 
 # HTTP client for MCP servers
 httpx==0.28.1
-aiohttp==3.13.3
+aiohttp==3.13.4
 
 # HTTP server for supervisor runtime
 fastapi==0.135.1
