@@ -1,0 +1,4 @@
+mcp==1.26.0
+awslabs.cloudwatch-mcp-server==0.0.19
+boto3==1.42.47
+pydantic==2.12.5

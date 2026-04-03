@@ -1,0 +1,41 @@
+{
+  "name": "msp-assistant-frontend",
+  "version": "2.0.0",
+  "license": "MIT-0",
+  "copyright": "Copyright Amazon.com, Inc.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "@cloudscape-design/chat-components": "1.0.101",
+    "@cloudscape-design/components": "3.0.1212",
+    "@cloudscape-design/global-styles": "1.0.50",
+    "@types/uuid": "10.0.0",
+    "amazon-cognito-identity-js": "6.3.16",
+    "axios": "1.13.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-markdown": "10.1.0",
+    "react-router-dom": "6.30.3",
+    "remark-gfm": "4.0.1",
+    "uuid": "13.0.0",
+    "zustand": "4.5.7"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.28",
+    "@types/react-dom": "18.3.7",
+    "@typescript-eslint/eslint-plugin": "8.56.1",
+    "@typescript-eslint/parser": "8.56.1",
+    "@vitejs/plugin-react": "4.7.0",
+    "eslint": "9.39.3",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-react-refresh": "0.4.26",
+    "typescript": "5.9.3",
+    "vite": "6.4.1",
+    "vite-plugin-node-polyfills": "0.26.0"
+  }
+}
