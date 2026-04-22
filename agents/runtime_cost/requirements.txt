@@ -12,7 +12,7 @@ a2a-sdk==0.3.24
 
 # HTTP clients
 httpx==0.28.1
-requests==2.32.5
+requests==2.33.0
 
 # AWS SDK
 boto3==1.42.63
