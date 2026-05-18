@@ -155,7 +155,7 @@ You also need:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/aws-samples/sample-msp-ops-automation.git
+git clone https://github.com/aws-samples/sample-MSP-Ops-Automation-V2.git
 cd sample-msp-ops-automation
 ```
 
