@@ -7,7 +7,7 @@
 fastapi==0.135.1
 uvicorn[standard]==0.41.0
 pydantic==2.12.5
-pydantic-settings==2.13.1
+pydantic-settings==2.14.2
 
 # =============================================================================
 # AgentCore SDK (replaces in-memory agents)
